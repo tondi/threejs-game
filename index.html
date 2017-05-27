@@ -20,7 +20,7 @@
         var ui;
         var fire;
         var laser;
-        window.onload = function () {
+        window.onload = function() {
 
             //// Nie dziala klikanie przy generowaniu planszy na ostatni
             leveldata = new LevelData();
@@ -29,7 +29,7 @@
             utils = new Utils();
             laser = new Laser();
             ui = new Ui();
-            
+
         }
     </script>
     <style>
@@ -42,20 +42,6 @@
         
         #main {
             position: absolute;
-        }
-        
-        nav {
-            font-size: 1.5em;
-            position: absolute;
-            right: 0;
-            width: 15vw;
-            /*height: 40vh;*/
-            margin: 1%;
-            background: transparent;
-            /*rgba(96, 96, 96, 0.21);*/
-            border: 1px solid white;
-            padding: 1%;
-            z-index: 100;
         }
         
         .menuElement {
@@ -75,16 +61,18 @@
             height: 100vh;
             background: rgba(0, 0, 0, 1);
             z-index: 123;
-
             display: flex;
         }
-        #overlay > * {
+        
+        #overlay>* {
             margin: auto;
         }
+        
         .visible {
             visibility: visible;
         }
-        .hidden{
+        
+        .hidden {
             visibility: hidden;
         }
     </style>
@@ -97,33 +85,7 @@
     <div id="main">
 
     </div>
-    <nav>
-        <!--<input id="rotation" type="checkbox">Rotation</input><br />
-        <input id="visibility" type="checkbox" checked>Visibility </input>
-        <div id="colorPicker" class="menuElement">
-            <div id="red" style="background:red; width: 2em; height:2em;"></div>
-            <div id="green" style="background:green; width: 2em; height:2em;"></div>
-            <div id="blue" style="background:blue; width: 2em; height:2em;"></div>
-        </div>
-        <div id="szescian">sześcian</div>
-        <div id="sfera">sfera</div>
-        <div id="czworoscian">czworościan</div>-->
 
-
-
-        <div id="camera">
-            <select id="camera__select">
-                <option value="level">CAM 1</option>
-                <option value="player">CAM 2</option>
-            </select>
-        </div>
-
-        <!--<input type="button" value="stand" id="stand"/><br />
-        <input type="button" value="run" id="run"/><br />
-        <input type="button" value="attack" id="attack" />
-        <input type="button" value="Add" id="add" />
-        <input type="button" value="Delete" id="delete"/>-->
-    </nav>
 </body>
 
 </html>

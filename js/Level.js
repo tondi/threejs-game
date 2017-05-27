@@ -415,7 +415,7 @@
         ////// Początek stats
         stats.begin();
 
-        console.log(walls[0])
+        // console.log(walls[0])
 
 
 
